@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #111;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar img {
+      height: 40px;
+    }
+
+    .banner {
+      position: relative;
+      color: white;
+      height: 60vh;
+      background-size: cover;
+      background-position: center;
+      background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7cdff19b-4f12-45e2-8232-2b416e0a7427/bb9b2bb0-6392-4649-9a5f-77b204978c99/IN-en-20240422-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      padding: 70px 30px;
+      margin-top: 60px;
+    }
+
+    .banner-content {
+      max-width: 500px;
+    }
+
+    .banner h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    .banner p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    .btn {
+      background-color: #e50914;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .section {
+      padding: 20px 30px;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+    }
+
+    .row {
+      display: flex;
+      overflow-x: scroll;
+    }
+
+    .row::-webkit-scrollbar {
+      display: none;
+    }
+
+    .row img {
+      width: 200px;
+      margin-right: 10px;
+      transition: transform 0.3s;
+    }
+
+    .row img:hover {
+      transform: scale(1.08);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+    <div>
+      <button class="btn">Sign In</button>
+    </div>
+  </div>
+
+  <header class="banner">
+    <div class="banner-content">
+      <h1>Unlimited movies, TV shows and more</h1>
+      <p>Watch anywhere. Cancel anytime.</p>
+      <button class="btn">Watch Now</button>
+      <button class="btn">More Info</button>
+    </div>
+  </header>
+
+  <section class="section">
+    <h2>Popular on Netflix</h2>
+    <div class="row">
+      <img src="https://picsum.photos/200/300?random=1" alt="Movie 1" />
+      <img src="https://picsum.photos/200/300?random=2" alt="Movie 2" />
+      <img src="https://picsum.photos/200/300?random=3" alt="Movie 3" />
+      <img src="https://picsum.photos/200/300?random=4" alt="Movie 4" />
+      <img src="https://picsum.photos/200/300?random=5" alt="Movie 5" />
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Trending Now</h2>
+    <div class="row">
+      <img src="https://picsum.photos/200/300?random=6" alt="Movie 6" />
+      <img src="https://picsum.photos/200/300?random=7" alt="Movie 7" />
+      <img src="https://picsum.photos/200/300?random=8" alt="Movie 8" />
+      <img src="https://picsum.photos/200/300?random=9" alt="Movie 9" />
+      <img src="https://picsum.photos/200/300?random=10" alt="Movie 10" />
+    </div>
+  </section>
+
+</body>
+</html>
